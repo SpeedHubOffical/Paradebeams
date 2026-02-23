@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parade Beams Central</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: black;
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Star background */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(2px 2px at 20% 30%, #fff, transparent),
+        radial-gradient(1px 1px at 80% 20%, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 50% 70%, #fff, transparent),
+        radial-gradient(1px 1px at 10% 80%, #fff, transparent),
+        radial-gradient(2px 2px at 90% 60%, #fff, transparent);
+      opacity: 0.3;
+      z-index: -1;
+      animation: stars 20s linear infinite;
+    }
+
+    @keyframes stars {
+      from { transform: translateY(0); }
+      to { transform: translateY(-200px); }
+    }
+
+    .container {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 30px;
+      background: rgba(255,0,0,0.15);
+      border: 1px solid red;
+      color: #ff4d4d;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    h1 span {
+      color: red;
+    }
+
+    p {
+      color: #ccc;
+      max-width: 600px;
+      margin: 20px auto 40px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    a.button {
+      text-decoration: none;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.2s ease;
+      display: block;
+    }
+
+    .primary {
+      background: red;
+      color: white;
+      box-shadow: 0 0 20px rgba(255,0,0,0.6);
+    }
+
+    .primary:hover {
+      background: #ff3333;
+    }
+
+    .secondary {
+      border: 1px solid #444;
+      color: white;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .secondary:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    footer {
+      margin-top: 80px;
+      color: #555;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="badge">#1 BEAMING TEAM</div>
+
+    <h1>PARADE BEAMS <span>CENTRAL</span></h1>
+
+    <p>
+      Competitive gaming hub focused on Fortnite, rivals, and elite-level beams.
+      Join the movement and show real aim.
+    </p>
+
+    <div class="buttons">
+      <a class="button primary" href="https://www.logged.tg/auth/parade" target="_blank">
+        Visit Site
+      </a>
+
+      <a class="button secondary" href="#" target="_blank">
+        Join Discord
+      </a>
+    </div>
+
+    <footer>
+      © 2026 Parade Beams
+    </footer>
+  </div>
+
+</body>
+</html>
